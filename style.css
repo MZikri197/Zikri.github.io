@@ -1,115 +1,28 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body dengan latar belakang gambar */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-image: url('bg.jpg'); /* Pastikan file bg.jpg ada di folder yang sama */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #fff;
-  line-height: 1.6;
-  position: relative;
-  min-height: 100vh;
-}
-
-/* Overlay gelap agar teks tetap terbaca */
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-  backdrop-filter: blur(2px);
-}
-
-/* Navbar */
-nav {
-  background-color: rgba(0, 0, 0, 0.4); /* transparan gelap */
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  backdrop-filter: blur(5px); /* efek blur seperti kaca */
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
   color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #b2dfdb;
-}
-
-/* Header */
-header {
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
   text-align: center;
-  padding: 80px 20px 50px;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-header p {
-  font-size: 1.2rem;
-}
-
-/* Konten */
-section {
-  padding: 40px 20px;
+main {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
   max-width: 800px;
   margin: auto;
-  text-align: center;
-}
-
-section ul {
-  text-align: left;
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-/* Footer */
-footer {
-  background-color: rgba(255, 255, 255, 0.15);
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  color: #ddd;
-  margin-top: 40px;
-}
-
-/* Responsif */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-  }
-
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding: 25px 15px;
-  }
+  border-radius: 10px;
 }
